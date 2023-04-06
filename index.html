@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Custom Umbrella</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-container">
+        <img
+          src="./Assets/Blue_umbrella.png"
+          alt="umbrella_image"
+          class="umbrella"
+        />
+        <img src="" alt="logo" class="logo" />
+      </div>
+      <div class="menu-container">
+        <h1>Custom Umbrella</h1>
+        <ul class="color-container">
+          <li class="color-black"></li>
+          <li class="color-gray"></li>
+          <li class="color-cyan-blue"></li>
+          <li class="color-pink"></li>
+          <li class="color-sky-blue"></li>
+          <li class="color-yellow"></li>
+          <li class="color-orange"></li>
+          <li class="color-red"></li>
+        </ul>
+        <h2>Customize your umbrella</h2>
+        <h3>Upload a logo for an intant preview.</h3>
+        <p>.png and .jpg files only. Max file size is 5MB</p>
+
+        <input
+          type="file"
+          class="file-upload"
+          accept=".jpg, .png"
+          size="5000000"
+        />
+        <button>
+          <img
+            src="./Assets/upload_icon.svg"
+            alt="upload-icon"
+            class="upload-icon"
+          />
+          Upload Logo
+        </button>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

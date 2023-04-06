@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: #ebf4fa;
+  height: 100vh;
+  color: #1f2937;
+}
+.image-container {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container .umbrella {
+  width: 400px;
+}
+
+.image-container .logo {
+  display: none;
+  position: fixed;
+  margin-top: 19%;
+  width: 70px;
+}
+
+.menu-container {
+  width: 500px;
+}
+
+.menu-container h1 {
+  font-size: 36px;
+}
+
+.color-container {
+  margin: 20px 0;
+  display: flex;
+  gap: 15px;
+}
+
+.color-container h2,
+h3,
+p {
+  margin: 5px 0;
+}
+
+li {
+  list-style: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 2px solid;
+  cursor: pointer;
+}
+li.active {
+  border: 6px solid;
+}
+.color-black,
+.color-black.active {
+  border-color: #333333;
+  background-color: #000000;
+}
+
+.color-gray,
+.color-gray.active {
+  border-color: #8d8d8d;
+  background-color: #808080;
+}
+
+.color-cyan-blue,
+.color-cyan-blue.active {
+  border-color: #2b547e;
+  background-color: #003153;
+}
+
+.color-pink,
+.color-pink.active {
+  border-color: #e25098;
+  background-color: #d90166;
+}
+
+.color-sky-blue,
+.color-sky-blue.active {
+  border-color: #82caff;
+  background-color: #02a4d3;
+}
+
+.color-yellow,
+.color-yellow.active {
+  border-color: #fada5e;
+  background-color: #fed33c;
+}
+
+.color-orange {
+  border-color: #f0944d;
+  background-color: #e66c2c;
+}
+
+.color-red,
+.color-red.active {
+  border-color: #f75d59;
+  background-color: #ef3038;
+}
+h2 {
+  font-weight: 600;
+}
+h3 {
+  font-weight: 500;
+}
+
+button {
+  padding: 10px;
+  width: 360px;
+  background-color: #02a4d3;
+  border: none;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.file-upload {
+  display: none;
+}
+.small-umbrella {
+  position: relative;
+  left: -10%;
+}
+
+button .upload-icon {
+  position: relative;
+  left: -20%;
+}
+.rotate-animation {
+  transition: transform 3s;
+  transform: rotate(360deg);
+}
+@media (max-width: 640px) {
+  .container {
+    flex-direction: column;
+  }
+  .menu-container {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .color-container {
+    width: fit-content;
+    margin: 15px auto;
+  }
+  .image-container .logo {
+    margin-top: 65%;
+  }
+}
